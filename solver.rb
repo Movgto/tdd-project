@@ -7,8 +7,13 @@ class Solver
     end
     result
   end
+  
+  def reverse(s)
+    s.split('').reverse.join
+  end
 end
 
 solver = Solver.new
 
 p solver.factorial(5) # => 120
+p solver.reverse('hello')
