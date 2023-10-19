@@ -1,9 +1,9 @@
 require_relative '../solver'
 
-describe "Solver" do
+describe 'Solver' do
   context "When using 'factorial' method" do
     let(:solver) { Solver.new }
-    it "Returns the multiplication of every number from n to 1" do
+    it 'Returns the multiplication of every number from n to 1' do
       expect(solver.factorial(5)).to eq(120)
       expect(solver.factorial(4)).to eq(24)
       expect(solver.factorial(3)).to eq(6)
@@ -15,7 +15,7 @@ describe "Solver" do
 
   context "When using 'reverse' method" do
     let(:solver) { Solver.new }
-    it "Returns a reversed string" do
+    it 'Returns a reversed string' do
       expect(solver.reverse('hello')).to eq('olleh')
     end
   end

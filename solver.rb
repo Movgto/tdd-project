@@ -1,15 +1,16 @@
 class Solver
-  def factorial(n)
-    return 0 if n <= 0
-    result = n
-    for a in 1..n-1 do
+  def factorial(num)
+    return 0 if num <= 0
+
+    result = num
+    (1..num - 1).each do |a|
       result *= a
     end
     result
   end
-  
-  def reverse(s)
-    s.split('').reverse.join
+
+  def reverse(str)
+    str.chars.reverse.join
   end
 end
 
