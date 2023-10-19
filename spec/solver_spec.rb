@@ -12,4 +12,11 @@ describe "Solver" do
       expect(solver.factorial(0)).to eq(0)
     end
   end
+
+  context "When using 'reverse' method" do
+    let(:solver) { Solver.new }
+    it "Returns a reversed string" do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
