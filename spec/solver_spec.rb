@@ -28,6 +28,7 @@ describe 'reverse' do
   end
   
   describe 'fizzbuzz' do
+    let(:solver) { Solver.new }
     it 'When N is divisible by 3, return "fizz"' do
       expect(solver.fizzbuzz(6)).to eq('fizz')
     end
