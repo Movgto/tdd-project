@@ -24,7 +24,6 @@ class Solver
       number.to_s
     end
   end
-
 end
 
 solver = Solver.new
