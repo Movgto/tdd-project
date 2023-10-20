@@ -22,7 +22,8 @@ describe 'Solver' do
 end
 
 describe 'reverse' do
+  let(:solver) { Solver.new }
   it 'the arguments is hello should to return olleh' do
-    expect(new_solver.reverse('hello')).to eq('olleh')
+    expect(solver.reverse('hello')).to eq('olleh')
   end
 end
