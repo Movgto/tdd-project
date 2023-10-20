@@ -20,3 +20,9 @@ describe 'Solver' do
     end
   end
 end
+
+describe 'reverse' do
+  it 'the arguments is hello should to return olleh' do
+    expect(new_solver.reverse('hello')).to eq('olleh')
+  end
+end
